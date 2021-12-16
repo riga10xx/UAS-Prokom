@@ -1,3 +1,5 @@
+#Nama : Harigama Putra
+#NIM : 12220112
 #import library
 
 import streamlit as st
