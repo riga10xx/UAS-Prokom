@@ -16,6 +16,23 @@ from streamlit.logger import get_logger
 
 from PIL import Image
 
+import base64
+
+main_bg = "background.jfif"
+main_bg_ext = "jpg"
+
+st.markdown(
+    f"""
+    <style>
+    .reportview-container {{
+        background: url(data:image/{main_bg_ext};base64,{base64.b64encode(open(main_bg, "rb").read()).decode()})
+    }}
+   
+    </style>
+    """, unsafe_allow_html=True
+)
+
+
 #-------create function def-------------
 
 page_bg_img = '''
